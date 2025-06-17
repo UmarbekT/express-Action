@@ -45,6 +45,5 @@ jobs:
             git fetch origin
             git checkout safto
             git reset --hard origin/main
-            redis-cli
             chmod +x init-safto.sh
             ./init-safto.sh

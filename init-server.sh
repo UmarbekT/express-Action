@@ -48,11 +48,7 @@ echo "📦 [5] npm install bajarilmoqda..."
 
 npm install
 
-echo "🏗️ [6] Build qilinmoqda..."
 
-npm run build || echo "⚠️ build skript topilmadi — o'tkazib yuborildi"
-
-echo "🔁 [7] PM2 orqali ilova qayta ishga tushirilmoqda: $APP_NAME"
 
 pm2 restart $APP_NAME || {
 
