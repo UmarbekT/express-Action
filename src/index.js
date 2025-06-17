@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const PORT = 3000;
+
 app.use(express.json());
 app.get("/hello", (req, res) => {
   res.send("Hello World!");
@@ -23,8 +23,5 @@ app.post("/sum", (req, res) => {
   } catch (error) {
     throw new Error(error.message);
   }
-});
-app.listen(PORT, () => {
-  console.log(`Server listening on ${PORT}`);
 });
 module.exports = { app };
