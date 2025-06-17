@@ -26,9 +26,6 @@ jobs:
       - name: Testlarni ishga tushirish
         run: npm run test
 
-      - name: Build qilish
-        run: npm run build
-
   deploy:
     needs: build-test
     runs-on: ubuntu-latest
